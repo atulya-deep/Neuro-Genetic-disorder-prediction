@@ -29,3 +29,13 @@ data.loc[data["Disease"] == "Common", "Disease"] = 2
 y=data["Disease"]
 enc = OneHotEncoder()
 Y = enc.fit_transform(y[:, np.newaxis]).toarray()
+
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test = train_test_split(x,Y,test_size=0.2)
+
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import Dropout
+from keras.layers import LeakyReLU
+from keras import regularizers
+from keras.optimizers import RMSprop
