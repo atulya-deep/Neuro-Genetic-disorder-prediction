@@ -39,3 +39,11 @@ from keras.layers import Dropout
 from keras.layers import LeakyReLU
 from keras import regularizers
 from keras.optimizers import RMSprop
+model = Sequential()
+model.add(Dense(64, input_dim = 1437, activation = 'relu'))
+model.add(LeakyReLU(alpha=0.05))
+model.add(Dense(128))
+model.add(LeakyReLU(alpha=0.09))
+model.add(Dense(256, activation = 'relu',kernel_regularizer=regularizers.l2(0.09)))
+model.add(Dropout(0.3))
+
