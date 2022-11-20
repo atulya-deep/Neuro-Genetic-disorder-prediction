@@ -46,4 +46,9 @@ model.add(Dense(128))
 model.add(LeakyReLU(alpha=0.09))
 model.add(Dense(256, activation = 'relu',kernel_regularizer=regularizers.l2(0.09)))
 model.add(Dropout(0.3))
+model.add(Dense(128))
+model.add(LeakyReLU(alpha=0.1))
+model.add(Dense(64, activation = 'relu'))
+model.add(Dense(3, activation = 'softmax'))
+
 
