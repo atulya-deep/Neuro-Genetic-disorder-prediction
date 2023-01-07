@@ -1,7 +1,7 @@
 # Neuro-Genetic-disorder-prediction
 Alzheimer’s and Parkinson’s disease are the most common forms of dementia that degenerate neurons in the brain cells. 
 This paper targets a comparative study on the performance of machine learning classifier and Neural Network techniques in neuro-degenerative data. The Neural Network algorithms gives classification accuracy ~92% with One hot Encoding Method
-
+![Understanding-Memory-Loss-Alzheimers-disease-the-basics jpg](https://user-images.githubusercontent.com/83969166/211157474-d23f5b30-2607-4886-b185-5d933377aa61.png)
 # DATASET
 ```python
 The dataset we are using for our project is the ADPD dataset also known as Alzheimer's and Parkinson's disease dataset.It has 1439 attributes and 199 entries. 
