@@ -50,5 +50,12 @@ model.add(Dense(128))
 model.add(LeakyReLU(alpha=0.1))
 model.add(Dense(64, activation = 'relu'))
 model.add(Dense(3, activation = 'softmax'))
+model.compile(loss = 'categorical_crossentropy', optimizer = 'RMSprop', metrics = ['accuracy'])
+
+model.summary()
+
+model.fit(x_train,y_train,epochs=1000,verbose=1)
+
+loss,accuracy=model.evaluate(x_test,y_test)
 
 
